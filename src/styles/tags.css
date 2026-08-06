@@ -1,0 +1,93 @@
+/* -------------------------------definiciones generales--------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* a{
+    color: var(--azul);
+    text-decoration: none;
+} */
+
+a:hover{
+    color: var(--primary-color)
+}
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------comienzo a estilizar----------------------------------- */
+header{
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    padding-bottom: 15px;
+    margin-top: 5%;
+    
+    flex: 0 0 auto;
+    background-image: url("/src/assets/header_final.png");
+}
+
+main{
+    
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/src/assets/background.png");
+    flex: 1;
+}
+
+footer{
+    background-color: black;
+    padding: 1rem 0;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    padding-top: 7%;
+    margin-bottom: 20px;
+    width: 100%;
+
+    /*se elimina posterio finalizado el diseno*/
+    /*border: 1px solid var(--divider-color);*/
+}
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px){
+    section{
+        padding-top: 25%
+    }
+
+    header{
+        background-image: url("/src/assets/Back.jpg");
+    }
+
+}

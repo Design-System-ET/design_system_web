@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": ["node_modules/**", "dist/**"],
+  "rules": {
+    "no-descending-specificity": null,
+    "import-notation": "string",
+    "selector-class-pattern": null,
+    "custom-property-pattern": null,
+    "no-duplicate-selectors": null
+  }
+}

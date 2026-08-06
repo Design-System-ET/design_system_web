@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Seven;
+    src: url('/src/assets/fonts/Seven.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: Prototype;
+    src: url('/src/assets/fonts/Prototype.ttf');
+}
+
+@font-face {
+    font-family: Sensations;
+    src: url('/src/assets/fonts/Sensations.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Le Jour Script";
+    src: url('/src/assets/fonts/Le-Jour-Script.otf') format('opentype');
+}
+
+
+
+:root {
+    /* Marca */
+    --color-primary: #0B1736;
+    --color-primary-light: #2563EB;
+    --color-primary-hover: #1D4ED8;
+    --color-secondary: #38BDF8;
+    --color-accent: #60A5FA;
+
+    /* Estados */
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+
+    /* Texto */
+    --color-dark: #111827;
+    --color-gray-700: #374151;
+    --color-gray-500: #6B7280;
+    --color-white: #FFFFFF;
+
+    /* UI */
+    --color-border: #E5E7EB;
+    --color-surface: #F8FAFC;
+    --color-background: #FFFFFF;
+
+    /* Efectos */
+    --color-shadow: rgba(0,0,0,.08);
+
+
+    /* SIZES */
+    --text: 25px;
+
+
+
+
+    /* FONTS */
+    --seven: 'Seven', sans-serif;
+    --prototype: 'Prototype', sans-serif;
+    --sensations: 'Sensations', sans-serif;
+    --le_your_script: 'Le Jour Script', sans-serif;
+
+    .img-thumbnail {
+        border-color: var(--dark-primary-color);
+    }
+}
