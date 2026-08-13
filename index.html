@@ -144,36 +144,91 @@
                     Solicitar asesoramiento <i class="bi bi-calendar2-check i_"></i>
                 </button>
 
+                <!--Modal asesoramiento-->
+                <div id="modal" class="modal"> 
+
+                    <div class="modal-contenido">
+
+                        <!-- Botón de cierre -->
+                        <div class=" container-fluid col-12">
+                            <span class="cerrar">&times;</span>
+                        </div>
+                        
+                        <!-- Sección de contacto -->
+                        <div id="contacto" class="container-fluid col-12">
+                            <div class="row align-items-top justify-content-center space_padding">
+                                
+                                <div class="col-12 col-md-5">
+                                    <h3 class="text-primary"><b>¿Tienes una idea de proyecto?</b></h3><br>
+                                    <p class="text-justify">Cuéntanos sobre tu proyecto o necesidad y te ayudaremos a encontrar la mejor solución.</p>
+                                    <p class="text-justify">Nos pondremos en contacto contigo para conocer en detalle tu proyecto y orientarte sobre las opciones disponibles.</p>
+
+                                    <img src="/public/asistente.png" alt="Asesoramiento" class="img-fluid mx-auto d-none d-md-block">
+                                </div>
+                                
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+                                    <form class="border border-contact border-2 border-opacity-50 rounded p-4">
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="apellido" class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido" placeholder="Tu apellido">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="mensaje" class="form-label">Mensaje</label>
+                                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                                        </div>
+                                    </form>
+
+                                    <br>
+                                    <button type="button" id="enviar" class="btn btn_contact">Enviar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <!-- Submenu de servicios -->
                 <div class="collapse mt-2" id="submenuServicios">
-                            <div class="card card-body">
-                                <div class="row">
+                    <div class="card card-body">
+                        <div class="row">
 
-                                    <div class="col-md-4">
-                                        <a href="#" class="dropdown-item link_hover">Sistemas de gestión empresarial</a>
-                                        <a href="#" class="dropdown-item link_hover">Aplicaciones de escritorio</a>
-                                        <a href="#" class="dropdown-item link_hover">Software de administración/back-office</a>
-                                        <a href="#" class="dropdown-item link_hover">Aplicación web a medida</a>
-                                        <a href="#" class="dropdown-item link_hover">Sitio corporativo</a>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <a href="#" class="dropdown-item link_hover">Landing page</a>
-                                        <a href="#" class="dropdown-item link_hover">Portal / dashboard de administración</a>
-                                        <a href="#" class="dropdown-item link_hover">API REST / integración por endpoints</a>
-                                        <a href="#" class="dropdown-item link_hover">Tienda online (e-commerce)</a>
-                                        <a href="#" class="dropdown-item link_hover">Integración con Mercado Pago</a>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <a href="#" class="dropdown-item link_hover">App móvil Android</a>
-                                        <a href="#" class="dropdown-item link_hover">Auditoría de sistemas existentes</a>
-                                        <a href="#" class="dropdown-item link_hover">Arquitectura de software / asesoría técnica</a>
-                                        <a href="#" class="dropdown-item link_hover">Optimización de velocidad y SEO técnico</a>
-                                        <a href="#" class="dropdown-item link_hover">IA para chatbots y asistentes</a>
-                                    </div>
-                                </div>
+                            <div class="col-md-4">
+                                <a href="#" class="dropdown-item link_hover">Sistemas de gestión empresarial</a>
+                                <a href="#" class="dropdown-item link_hover">Aplicaciones de escritorio</a>
+                                <a href="#" class="dropdown-item link_hover">Software de administración/back-office</a>
+                                <a href="#" class="dropdown-item link_hover">Aplicación web a medida</a>
+                                <a href="#" class="dropdown-item link_hover">Sitio corporativo</a>
                             </div>
+
+                            <div class="col-md-4">
+                                <a href="#" class="dropdown-item link_hover">Landing page</a>
+                                <a href="#" class="dropdown-item link_hover">Portal / dashboard de administración</a>
+                                <a href="#" class="dropdown-item link_hover">API REST / integración por endpoints</a>
+                                <a href="#" class="dropdown-item link_hover">Tienda online (e-commerce)</a>
+                                <a href="#" class="dropdown-item link_hover">Integración con Mercado Pago</a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="#" class="dropdown-item link_hover">App móvil Android</a>
+                                <a href="#" class="dropdown-item link_hover">Auditoría de sistemas existentes</a>
+                                <a href="#" class="dropdown-item link_hover">Arquitectura de software / asesoría técnica</a>
+                                <a href="#" class="dropdown-item link_hover">Optimización de velocidad y SEO técnico</a>
+                                <a href="#" class="dropdown-item link_hover">IA para chatbots y asistentes</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

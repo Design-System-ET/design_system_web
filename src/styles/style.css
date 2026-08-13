@@ -2,6 +2,7 @@
 @import "./menuBar.css";
 @import "./tags.css";
 @import "./footer.css";
+@import "./modal.css";
 
 /* Agrega los css de cada pagina */
 @import "./index.css";

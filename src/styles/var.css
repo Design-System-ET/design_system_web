@@ -61,6 +61,6 @@
     --le_your_script: 'Le Jour Script', sans-serif;
 
     .img-thumbnail {
-        border-color: var(--dark-primary-color);
+        border-color: var(--color-primary);
     }
 }

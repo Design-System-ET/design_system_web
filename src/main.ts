@@ -41,3 +41,21 @@ boton?.addEventListener('click', () => {
     oculto?.classList.toggle('d-none');
     boton.innerHTML = oculto?.classList.contains('d-none') ? 'Ver más proyectos <i class="bi bi-arrow-right"></i>' : '<i class="bi bi-arrow-left"></i> Ver menos';
 });
+
+
+//modal asesoramiento
+const btnAbrirModal = document.querySelector<HTMLButtonElement>('.btn-border');
+const modal = document.getElementById('modal');
+const btnCerrarModal = document.querySelector<HTMLSpanElement>('.cerrar');
+
+btnAbrirModal?.addEventListener('click', () => {
+    if (modal) {
+        modal.style.display = 'flex';
+    }
+});
+
+btnCerrarModal?.addEventListener('click', () => {
+    if (modal) {
+        modal.style.display = 'none';
+    }
+});

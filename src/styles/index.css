@@ -80,6 +80,7 @@
     color: var(--color-primary);
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .section_underline {
@@ -104,9 +105,27 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 @media (max-width: 768px){
+    [style*="width: 18rem;"] {
+        width: 100% !important;
+    }
+
     .padding_top{
         padding-top: 30%;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
     }
 
 }

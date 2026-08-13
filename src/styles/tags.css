@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body, html{
@@ -89,5 +90,4 @@ hr{
     header{
         background-image: url("/src/assets/Back.jpg");
     }
-
 }
