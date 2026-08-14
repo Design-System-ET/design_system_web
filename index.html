@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MultiService en Chuy, Rocha, Uruguay. Soluciones técnicas profesionales en electricidad, carpintería, herrería, reparación de PC, mecánica y más. Presupuesto sin cargo. Atención personalizada y garantía.">
-    <meta name="keywords" content="multiservice, servicios técnicos, electricista Chuy, carpintero Rocha, herrero Uruguay, mecánico, reparación PC, informático, reparaciones, Chuy, Rocha, Uruguay">
+    <meta name="description" content="Design System | Desarrollo de software profesional. Creamos páginas web, aplicaciones Android y soluciones digitales personalizadas para impulsar tu negocio.">
+    <meta name="keywords" content="desarrollo de software, diseño web, aplicaciones Android, programas informáticos, soluciones digitales, desarrollo web, UX/UI, consultoría técnica">    
     <meta name="robots" content="index, follow">
     <meta name="author" content="Design System">
     <meta name="language" content="es">
-    <meta name="geo.region" content="UY-Ro">
-    <meta name="geo.position" content="-33.6948;-53.4566">
-    <meta name="geo.placename" content="Chuy, Rocha, Uruguay">
-    <meta name="ICBM" content="-33.6948, -53.4566">
+    <meta name="geo.region" content="UY">
+    <meta name="geo.position" content="-34.9011;-56.1645">
+    <meta name="geo.placename" content="Montevideo, Uruguay">
+    <meta name="ICBM" content="-34.9011, -56.1645">
     <meta name="google-site-verification" content="ZFYHyitVbatzr_qcPKjept3wC3bgOE5iS4jxk-4h1OA">
     <meta name="theme-color" content="#1a3c5e">
 
     <!-- WhatsApp click-to-chat -->
-    <meta property="og:whatsapp:number" content="+59891388175">
+    <meta property="og:whatsapp:number" content="+598XXXXXXXXX">
 
     <!-- Open Graph / Redes sociales -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="MultiService Chuy | Electricidad, Carpintería, Informática y más en Uruguay">
-    <meta property="og:description" content="Soluciones técnicas integrales en Chuy, Rocha. Electricidad, carpintería, herrería, reparación de PC, mecánica, antenas y más. Presupuesto sin cargo. Atención personalizada.">
+    <meta property="og:title" content="Design System | Desarrollo de Software Profesional">
+    <meta property="og:description" content="Paginas web, aplicaciones Android y programas informaticos personalizados. Optimizamos procesos y mejoramos la experiencia de usuario con soluciones digitales innovadoras.">
     <meta property="og:image" content="%VITE_SITE_URL%/og-image.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -32,13 +32,13 @@
     <meta property="og:locale" content="es_UY">
     <meta property="og:locale:alternate" content="pt_BR">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MultiService Chuy | Electricidad, Carpintería, Informática y más">
-    <meta name="twitter:description" content="Soluciones técnicas en Chuy, Rocha. Electricidad, carpintería, herrería, reparación de PC, mecánica y más. Presupuesto sin cargo.">
+    <meta name="twitter:title" content="Design System | Desarrollo de Software Profesional">
+    <meta name="twitter:description" content="Desarrollo web, apps Android y soluciones digitales personalizadas para tu negocio.">
     <meta name="twitter:image" content="%VITE_SITE_URL%/og-image.webp">
 
     <link rel="canonical" href="%VITE_SITE_URL%/">
 
-    <title>MultiService Chuy | Electricidad, Carpintería, Informática y más en Uruguay</title>
+    <title>Design System | Desarrollo de Software Profesional</title>
 
     <!-- Mi CSS -->
     <!-- <link rel="stylesheet" href="/src/styles/style.css"> -->
@@ -100,12 +100,12 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#Footer">Contacto</a>
                         </li>
 
                     </ul>
 
-                    <a href="/pages/contacto.html" class="btn btn-presupuesto rounded-pill">
+                    <a href="https://wa.link/mb7ihf" target="_blank" class="btn btn-presupuesto rounded-pill">
                         Hablemos <i class="bi bi-chat"></i>
                     </a>
 
@@ -140,7 +140,7 @@
                         aria-controls="submenuServicios">Ver servicios <i class="bi bi-arrow-right"></i>
                 </button>
 
-                <button class="btn btn-border btn-lg" type="button">
+                <button class="btn btn-border btn-lg" type="button" data-modal-open>
                     Solicitar asesoramiento <i class="bi bi-calendar2-check i_"></i>
                 </button>
 
@@ -154,7 +154,7 @@
                             <span class="cerrar">&times;</span>
                         </div>
                         
-                        <!-- Sección de contacto -->
+                        <!-- Formulario de contacto -->
                         <div id="contacto" class="container-fluid col-12">
                             <div class="row align-items-top justify-content-center space_padding">
                                 
@@ -236,7 +236,7 @@
 
     <main id="app">
         <!-- Servicios -->
-        <section id="Servicios" class="container border">
+        <section id="Servicios" class="container ">
             <div>
                 <div>
                     <p class="text-center title_antes">ALGUNOS DE NUESTROS SERVICIOS</p>
@@ -306,7 +306,7 @@
         </section>
 
         <!-- Portafolio -->
-        <section id="Portafolio" class="container border">
+        <section id="Portafolio" class="container ">
             <div>
                 <div>
                     <p class="text-center title_antes">NUESTROS PROYECTOS</p>
@@ -408,12 +408,92 @@
         </section>
 
         <!-- Tecnologias -->
-        <section id="Tecnologias" class="container border">
-            
+        <section id="Tecnologias" class="container ">
+            <div>
+                <div>
+                    <p class="text-center title_antes">NUESTRO PROCESO</p>
+                    <h1 class="section_title">Así trabajamos </h1>
+                    <div class="section_underline"></div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-5 g-4 padding_banner">
+                    <!--Card 1-->
+                    <div class="col">
+                        <div class="h-100 justify-content-center align-items-center">
+                            <img src="/public/mensaje.png" class="card-img-top img_banner" alt="Mensaje">
+                            <div class="card-body">
+                                <p class="card-text text-center text-bold">1. Escuchamos</p>
+                                <p class="text-center">Entendemos tus necesidades y objetivos del proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card 2-->
+                    <div class="col">
+                        <div class="h-100 justify-content-center align-items-center">
+                            <img src="/public/planificacion.png" class="card-img-top img_banner" alt="Planificación">
+                            <div class="card-body">
+                                <p class="card-text text-center text-bold">2. Planificamos</p>
+                                <p class="text-center">Definimos la estrategia, tecnologías y tiempos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="col">
+                        <div class="h-100 justify-content-center align-items-center">
+                            <img src="/public/codificacion.png" class="card-img-top img_banner" alt="Codificación">
+                            <div class="card-body">
+                                <p class="card-text text-center text-bold">3. Desarrollamos</p>
+                                <p class="text-center">Construimos la solución con calidad y seguridad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card 4-->
+                    <div class="col">
+                        <div class="h-100 justify-content-center align-items-center">
+                            <img src="/public/entregamos.png" class="card-img-top img_banner" alt="Entrega">
+                            <div class="card-body">
+                                <p class="card-text text-center text-bold">4. Entregamos</p>
+                                <p class="text-center">Probamos y entregamos la solución funcionando.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card 5-->
+                    <div class="col">
+                        <div class="h-100 justify-content-center align-items-center">
+                            <img src="/public/soporte.png" class="card-img-top img_banner" alt="Soporte">
+                            <div class="card-body">
+                                <p class="card-text text-center text-bold">1. Soporte</p>
+                                <p class="text-center">Te acompañamos con soporte y mejoras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner -->
+                <div class="padding_banner">
+                    <div class="banner col-12 d-flex">
+
+                        <div class="col-6 d-flex flex-column justify-content-center align-items-start">
+                            <h1 class="titulo padding_banner">¿Listo para llevar tu ideal al siguiente nivel?</h1>
+                            <p class="subTitulo">Conversemos sobre tu proyecto y encontremos la mejor solución para tu negocio.</p>
+                        </div>
+
+                        <div class="col-6">
+                            <button class="btn btn-border btn-lg" type="button" id="btn-banner-modal" data-modal-open>
+                            Hablemos de tu proyecto <i class="bi bi-chat-text-fill"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid" id="Footer">
         <div class="container-fluid d-flex justify-content-around align-items-center flex-wrap gap-4">
 
             <div class="conte">

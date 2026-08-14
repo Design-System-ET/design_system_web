@@ -44,14 +44,16 @@ boton?.addEventListener('click', () => {
 
 
 //modal asesoramiento
-const btnAbrirModal = document.querySelector<HTMLButtonElement>('.btn-border');
 const modal = document.getElementById('modal');
 const btnCerrarModal = document.querySelector<HTMLSpanElement>('.cerrar');
+const modalButtons = document.querySelectorAll<HTMLButtonElement>('[data-modal-open]');
 
-btnAbrirModal?.addEventListener('click', () => {
-    if (modal) {
-        modal.style.display = 'flex';
-    }
+modalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        if (modal) {
+            modal.style.display = 'flex';
+        }
+    });
 });
 
 btnCerrarModal?.addEventListener('click', () => {

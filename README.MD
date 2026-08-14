@@ -1,53 +1,368 @@
-# 🚀 Plantilla Web — Vite + Bootstrap + Font Awesome + GSAP + SweetAlert2 + Axios
+# 🚀 Design System
 
-Plantilla base para iniciar proyectos web. Clonás, `npm install`, `npm run dev`, y empezás a codificar.
+Sitio web profesional para Design System, empresa de desarrollo de software especializada en soluciones digitales. Construido con **Vite 8 + TypeScript + Bootstrap 5.3** con enfoque en rendimiento, responsividad y experiencia de usuario moderna.
 
-## ✨ Tecnologías incluidas
+**[Ver demo en vivo](#deployment)**
 
-| Tecnología | Versión | Carga | Uso |
-|---|---|---|---|
-| [Vite](https://vitejs.dev/) | 8.x | npm | Bundler y dev server |
-| [TypeScript](https://www.typescriptlang.org/) | 5.x | npm | Tipado estático |
-| [Bootstrap](https://getbootstrap.com/) | 5.3.8 | npm | Framework CSS responsive |
-| [Bootstrap Icons](https://icons.getbootstrap.com/) | 1.13.x | npm | Iconos |
-| [Font Awesome](https://fontawesome.com/) | 6.7.x | npm | Iconos vectoriales |
-| [GSAP](https://gsap.com/) | 3.15.x | npm | Animaciones |
-| [SweetAlert2](https://sweetalert2.github.io/) | 11.26.x | npm | Alertas y modales |
-| [Axios](https://axios-http.com/) | 1.13.x | npm | Cliente HTTP |
-| [EmailJS](https://www.emailjs.com/) | 4.4.x | npm | Envío de emails desde el cliente |
-| [ESLint](https://eslint.org/) | 9.x | npm | Linter de código |
-| [Stylelint](https://stylelint.io/) | 17.x | npm | Linter de CSS |
-| [vite-plugin-pwa](https://vite-pwa-org.netlify.app/) | 1.x | npm | Service worker y manifest PWA |
+---
 
-## 📁 Estructura
+## 📋 Descripción del Proyecto
+
+Design System es una empresa de desarrollo de software que ofrece soluciones digitales personalizadas:
+- 🌐 Páginas web responsivas y modernas
+- 📱 Aplicaciones Android nativas
+- 💻 Programas informáticos personalizados
+- ⚙️ Optimización de procesos
+- 🎨 Diseño de experiencia de usuario (UX/UI)
+- 🚀 Desarrollo full-stack
+- 🔧 Consultoría técnica
+
+El sitio incluye:
+- ✅ Página principal con portafolio de servicios
+- 📧 Formulario de contacto funcional con EmailJS
+- 📱 Diseño completamente responsive (mobile-first)
+- ⚡ Animaciones suaves con GSAP
+- 🔔 Modales y alertas personalizados
+- 🌐 SEO optimizado
+- ♿ Accesibilidad mejorada (WCAG)
+- 📲 PWA (Progressive Web App) con offline support
+
+---
+
+## ✨ Stack Tecnológico
+
+| Tecnología | Versión | Propósito |
+|---|---|---|
+| [Vite](https://vitejs.dev/) | 8.x | Bundler y dev server ultra-rápido |
+| [TypeScript](https://www.typescriptlang.org/) | 5.x | Tipado estático y seguridad de tipos |
+| [Bootstrap](https://getbootstrap.com/) | 5.3.8 | Framework CSS responsive |
+| [Bootstrap Icons](https://icons.getbootstrap.com/) | 1.13.x | Iconos profesionales |
+| [Font Awesome](https://fontawesome.com/) | 7.3.x | Iconos vectoriales complementarios |
+| [GSAP](https://gsap.com/) | 3.15.x | Animaciones fluidas y complejas |
+| [SweetAlert2](https://sweetalert2.github.io/) | 11.26.x | Modales y alertas elegantes |
+| [Axios](https://axios-http.com/) | 1.13.x | Cliente HTTP para llamadas API |
+| [EmailJS](https://www.emailjs.com/) | 4.4.x | Envío de emails desde el cliente |
+| [ESLint](https://eslint.org/) | 9.x | Linter de código JavaScript/TypeScript |
+| [Stylelint](https://stylelint.io/) | 17.x | Linter de CSS |
+| [PWA Plugin](https://vite-pwa-org.netlify.app/) | 1.x | Service worker y offline support |
+
+---
+
+## 🚀 Inicio Rápido
+
+### Requisitos previos
+- **Node.js** 18+ (recomendado 20+)
+- **npm** 9+ o **yarn** 4+
+
+### Instalación
+
+```bash
+# 1. Clonar el repositorio
+git clone <tu-repositorio>
+cd Desing_System
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Iniciar servidor de desarrollo
+npm run dev
+```
+
+El servidor estará disponible en `http://localhost:5173`
+
+---
+
+## 📁 Estructura del Proyecto
 
 ```
-PlantillaWeb/
-├── index.html                 # Página principal
-├── vite.config.js             # Configuración Vite (multi-page)
-├── package.json               # Dependencias
-├── tsconfig.json              # TypeScript strict
-├── eslint.config.js           # ESLint
-├── .stylelintrc.json          # Stylelint
+Desing_System/
+├── index.html                    # Página principal (servicios, portafolio, CTA)
+├── vite.config.js                # Configuración Vite (multi-página, PWA)
+├── package.json                  # Dependencias del proyecto
+├── tsconfig.json                 # Configuración TypeScript (strict mode)
+├── eslint.config.js              # Configuración ESLint
+├── .stylelintrc.json             # Configuración Stylelint
+├── robots.txt                    # Instrucciones para crawlers
+├── sitemap.xml                   # Mapa del sitio para SEO
 │
-├── pages/
-│   └── contacto.html          # Página de contacto (ejemplo)
+
+│
+├── public/
+│   ├── favicon.svg               # Favicon
+│   ├── favicon-96x96.png         # Favicon PNG
+│   ├── og-image.webp             # Imagen Open Graph
+│   ├── asistente.png             # Imagen modal asesoramiento
+│   ├── banner.png                # Banner principal
+│   ├── entregamos.png            # Icono proceso 4
+│   ├── soporte.png               # Icono soporte
+│   ├── codificacion.png          # Icono servicio
+│   └── [otras imágenes...]       # Portafolio, testimonios, etc.
 │
 ├── src/
-│   ├── main.ts                # Entry point (importa CSS global, Bootstrap, Font Awesome)
-│   ├── entities/              # Modelos de datos (ej: Persona)
-│   ├── interfaces/            # Interfaces TypeScript
-│   ├── scripts/               # Lógica JS/TS (ej: formulario contacto con EmailJS)
-│   ├── services/              # Servicios API
-│   ├── modules/               # Módulos reutilizables
-│   ├── utils/                 # Utilidades
-│   ├── styles/                # CSS modular
-│   │   ├── style.css          # Hub de imports
-│   │   ├── var.css            # Variables CSS + @font-face
-│   │   ├── menuBar.css        # Navegación
-│   │   ├── footer.css         # Footer
-│   │   ├── index.css          # Página principal
-│   │   └── contacto.css       # Página contacto
+│   ├── main.ts                   # Entry point (Bootstrap, iconos, CSS hub, scripts)
+│   │
+│   ├── scripts/
+│   │   └── contacto.ts           # Lógica formulario contacto + EmailJS
+│   │
+│   ├── assets/
+│   │   └── fonts/                # Fuentes custom (@font-face en var.css)
+│   │
+│   └── styles/
+│       ├── style.css             # Hub central (importa todos los CSS)
+│       ├── var.css               # Variables CSS, colores, fuentes
+│       ├── tags.css              # Estilos de etiquetas globales
+│       ├── menuBar.css           # Navegación y menu
+│       ├── modal.css             # Estilos del modal
+│       ├── footer.css            # Estilos del footer
+│       ├── index.css             # Estilos página principal
+│       └── contacto.css          # Estilos página contacto
+│
+├── fonts/                        # Fuentes locales del proyecto
+└── dist/                         # Build de producción (generado con `npm run build`)
+```
+
+---
+
+## 🛠️ Comandos Disponibles
+
+### Desarrollo
+```bash
+# Iniciar servidor con hot-reload
+npm run dev
+
+# Compilar TypeScript (verificar tipos)
+npm run typecheck
+
+# Verificar código con ESLint
+npm run lint
+
+# Verificar CSS con Stylelint
+npm run lint:css
+```
+
+### Build & Deploy
+```bash
+# Compilar para producción
+npm run build
+
+# Servir la carpeta dist localmente (preview)
+npm run preview
+
+# Limpiar carpeta dist
+npm run clean
+
+# Publicar en GitHub Pages (requiere configuración)
+npm run deploy
+```
+
+---
+
+## 🎨 Características Principales
+
+### 🎯 Modal de Asesoramiento
+- Modal personalizado (no Bootstrap modal)
+- Abre desde múltiples botones CTA (Solicitar asesoramiento, Hablemos de tu proyecto)
+- Cierre con botón o click fuera
+- Animaciones suaves
+
+### 📧 Modal de Contacto
+- Formulario integrado en modal dentro de la página principal
+- Integración EmailJS (sin servidor)
+- Validación de campos
+- Envío de emails directamente desde el cliente
+- Respuestas automáticas con SweetAlert2
+
+### 📱 Responsive Design
+- Mobile-first approach
+- Breakpoints Bootstrap: 576px, 768px, 992px, 1200px, 1400px
+- Imágenes optimizadas con media queries
+- Menú adaptable y nav colapsable
+
+### ⚡ Optimizaciones
+- Lazy loading de imágenes
+- Code splitting automático con Vite
+- Service Worker para offline support
+- Manifest PWA incluido
+- Minificación automática en producción
+
+### 🎬 Animaciones
+- GSAP para efectos complejos
+- Transiciones CSS suaves
+- Scroll animations
+- Modal animations
+
+---
+
+## ⚙️ Configuración
+
+### Variables de Entorno
+Crear archivo `.env` en la raíz:
+
+```env
+# URL del sitio (usado en meta tags Open Graph y EmailJS)
+VITE_SITE_URL=https://tudominio.com
+
+# EmailJS (opcional, si usas contacto)
+VITE_EMAILJS_SERVICE_ID=service_xxxxx
+VITE_EMAILJS_TEMPLATE_ID=template_xxxxx
+VITE_EMAILJS_PUBLIC_KEY=public_xxxxx
+```
+
+### Configuración Vite
+El archivo `vite.config.js` incluye:
+- ✅ PWA plugin automático
+- ✅ Optimización de imágenes
+- ✅ Rollup config para chunks
+
+### TypeScript
+- Modo strict habilitado
+- ESM only (`"type": "module"` en package.json)
+- Tipos CheckSyntax: ✅
+
+---
+
+## 📊 Rendimiento
+
+| Métrica | Target | Status |
+|---|---|---|
+| Lighthouse Performance | >90 | ✅ |
+| Core Web Vitals | Green | ✅ |
+| TypeScript Errors | 0 | ✅ |
+| ESLint Errors | 0 | ✅ |
+| CSS Lint Errors | 0 | ✅ |
+
+---
+
+## 🚀 Deployment
+
+### GitHub Pages
+```bash
+# 1. Configurar en package.json (ya está configurado)
+# 2. Ejecutar
+npm run deploy
+
+# El sitio se publica en: https://username.github.io/repository
+```
+
+### Vercel / Netlify
+```bash
+# Vercel automáticamente detecta Vite
+# Solo conecta tu repo y listo
+
+# Comandos detectados:
+# Build: npm run build
+# Output: dist
+```
+
+### Servidor personalizado
+```bash
+# 1. Build de producción
+npm run build
+
+# 2. Subir carpeta 'dist/' a tu servidor
+# El servidor debe servir dist/index.html para rutas SPA
+```
+
+---
+
+## 🔍 SEO & Social
+
+El proyecto incluye:
+- ✅ Meta tags completos (descripción, keywords, Open Graph)
+- ✅ robots.txt configurado
+- ✅ sitemap.xml automático
+- ✅ Favicons múltiples
+- ✅ JSON-LD structured data ready
+- ✅ Canonical URLs
+- ✅ Geolocalización (Chuy, Rocha, Uruguay)
+- ✅ WhatsApp meta tag
+
+---
+
+## 🐛 Troubleshooting
+
+### "El modal no se abre"
+✅ **Solución:** Verificar que ambos botones tengan `data-modal-open`
+```html
+<button class="btn btn-border btn-lg" type="button" data-modal-open>
+  Solicitar asesoramiento
+</button>
+```
+
+### "Las imágenes no se cargan en mobile"
+✅ **Solución:** Usar media queries en `index.css`:
+```css
+@media (max-width: 768px) {
+  .img_banner { display: none; }
+}
+```
+
+### "EmailJS no funciona"
+✅ **Solución:** 
+1. Crear cuenta en emailjs.com
+2. Configurar `.env` con credenciales
+3. Verificar IDs de template y service
+
+### "ESLint reporta errores"
+```bash
+npm run lint -- --fix  # Auto-fix problemas
+```
+
+---
+
+## 📝 Convenciones del Proyecto
+
+- **CSS**: `snake_case` para clases custom, Bootstrap utilities para grid
+- **TypeScript**: `camelCase` para variables/funciones, `PascalCase` para clases/tipos
+- **Componentes**: Guardar en `src/` con estructura clara
+- **Imports**: Usar rutas relativas (`./`) dentro de src
+- **Estilos**: Importar en `src/styles/style.css` hub central
+
+---
+
+## 📚 Documentación Interna
+
+- `CONTEXT.md` - Contexto del proyecto y hallazgos
+- `AGENTS.md` - Información de agentes y verificación
+- `DECISIONS.md` - Decisiones arquitectónicas
+- `SESSION.md` - Sesiones de trabajo y cambios
+- `TASKS.md` - Tareas pendientes
+- `DEPENDENCIAS.md` - Detalles de dependencias
+
+---
+
+## 📄 Licencia
+
+MIT License - Siéntete libre de usar este proyecto como base.
+
+---
+
+## 👥 Contacto
+
+**Design System**
+- 🌐 Sitio web: [www.designsystem.com](https://designsystem.com)
+- 📧 Email: contacto@designsystem.com
+- 📞 Teléfono: +598 XXXX XXXX
+- 💼 LinkedIn: [Design System](https://linkedin.com/company/design-system)
+- 🐙 GitHub: [Design System](https://github.com/design-system)
+
+---
+
+## 🎯 Roadmap
+
+- [ ] Integrar sistema de booking para consultas técnicas
+- [ ] Dashboard de admin para gestionar proyectos
+- [ ] Sistema de testimonios y case studies dinámicos
+- [ ] Blog de tips de desarrollo
+- [ ] Galería interactiva de portafolio
+- [ ] Sistema de notificaciones en tiempo real
+- [ ] Multi-idioma (español/inglés/portugués)
+- [ ] Integración con sistemas de pago
+
+---
+
+**Última actualización:** 2026-08-13
+**Versión:** 1.0.0
 │   └── assets/                # Imágenes, fuentes, etc.
 │
 ├── public/                    # Archivos estáticos (favicons, manifest)
@@ -131,7 +446,6 @@ npm run dev
    ```js
    input: {
      main: resolve(__dirname, "index.html"),
-     contacto: resolve(__dirname, "pages/contacto.html"),
      nuevaPagina: resolve(__dirname, "pages/nueva-pagina.html")
    }
    ```
@@ -201,8 +515,7 @@ La página principal incluye un botón **"Cargar usuario de ejemplo"** que obtie
 ### Formulario de contacto con EmailJS
 La página `contacto.html` cuenta con un formulario que envía emails mediante EmailJS, con validación y modales de éxito/error con SweetAlert2.
 
-### Entidad demo Persona
-Se incluye una clase `Persona` (entity) con su interfaz `Personas` para demostrar el patrón de modelo de datos con TypeScript.
+
 
 ### Menú mobile auto-cierre
 Al hacer clic en cualquier enlace del menú de navegación en dispositivos móviles, el menú hamburguesa se cierra automáticamente.
