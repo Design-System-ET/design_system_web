@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     base: "/",
+    
     //para ver el proyecto en la red local, para poder acceder desde otros dispositivos
     server: {
       host: true,      // escucha en 0.0.0.0 (todas las IPs)
@@ -38,10 +39,10 @@ export default defineConfig(({ mode }) => {
           "icons.svg"
         ],
         manifest: {
-          name: "Mi Sitio Web",
-          short_name: "SitioWeb",
+          name: "Design System",
+          short_name: "Design System",
           description:
-            "Página web moderna con soporte para todos los dispositivos y PWA.",
+            "Design System | Desarrollo de Software en Uruguay - Páginas web, apps Android y programas informáticos a medida.",
           icons: [
             {
               src: "/favicon-16x16.png",
