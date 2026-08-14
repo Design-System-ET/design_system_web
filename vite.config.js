@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => {
 
 
   return {
+    base: "/",
     //para ver el proyecto en la red local, para poder acceder desde otros dispositivos
     server: {
       host: true,      // escucha en 0.0.0.0 (todas las IPs)
