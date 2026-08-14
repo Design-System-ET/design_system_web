@@ -129,7 +129,7 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    background-image: url('/public/banner.png');
+    background-image: url('/public/banner.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

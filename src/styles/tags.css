@@ -46,7 +46,7 @@ header{
     margin-top: 5%;
     
     flex: 0 0 auto;
-    background-image: url("/src/assets/header_final.png");
+    background-image: url("/src/assets/header_final.webp");
 }
 
 main{
@@ -54,7 +54,7 @@ main{
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/src/assets/background.png");
+    background-image: url("/src/assets/background.webp");
     flex: 1;
 }
 
@@ -88,6 +88,6 @@ hr{
     }
 
     header{
-        background-image: url("/src/assets/Back.jpg");
+        background-image: url("/src/assets/Back.webp");
     }
 }
