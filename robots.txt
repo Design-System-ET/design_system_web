@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /privado/
 Allow: /
 
-Sitemap: https://AQUI-DOMINIO/sitemap.xml
+Sitemap: http://design-system-soft.com/sitemap.xml
